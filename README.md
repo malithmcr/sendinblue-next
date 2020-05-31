@@ -1,6 +1,6 @@
 # Sendinblue Next.js Transactional email
 
-This repo used for the tutorial 'Send Transactional Emails With Next.js and SendinBlue' in SendiBlue.com blog.
+This repo is used for the tutorial 'Send Transactional Emails With Next.js and SendinBlue' in SendiBlue.com blog.
 
 
 Next.js is a wonderful Framework based on React that allows us to render views from the server side. We will use Next.js with
