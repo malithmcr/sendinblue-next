@@ -14,7 +14,10 @@ function HomePage() {
     display: "inline-block",
     backgroundColor: "DodgerBlue",
     padding: "10px",
-    fontFamily: "Arial"
+    fontFamily: "Arial",
+    maxWidth: '240px',
+    margin: '0 auto',
+    borderRadius: '3px'
   };
 
   return(<div style={buttonWrapperStyle}>

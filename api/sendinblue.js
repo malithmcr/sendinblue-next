@@ -3,7 +3,7 @@ const defaultClient = SibApiV3Sdk.ApiClient.instance;
 
 // Configure API key authorization: api-key
 var apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey = 'ADD-YOUR-API-KEY-HERE';
+apiKey.apiKey = 'YOUR-API-KEY';
 
 var apiInstance = new SibApiV3Sdk.SMTPApi();
 

@@ -26,7 +26,8 @@ app
 
     
     server.use(bodyParser.json()).post('/api/email', (req, res) => {
-      const { email = '', msg = '' } = req.body; //We will use this later
+      const { link = '' } = req.body; //We will use this later
+      
       let sendSmtpEmail = {
         to: [{
             email: 'malith@sendinblue.com' //TODO: Change this on production.
@@ -35,12 +36,12 @@ app
         params: {
           name: 'Malith',
           subject: 'Someone sent you a link',
-          text: msg,
+          link: link,
       },
       };
       sendinblue(sendSmtpEmail)
       res.send('success');
-    })
+    });
   })
   .catch((ex) => {
     console.error(ex.stack);

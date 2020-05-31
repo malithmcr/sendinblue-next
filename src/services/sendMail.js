@@ -7,7 +7,7 @@ export const sendMail = async (link) => {
         name: "Malith",
         email: "malith@sendinblue.com",
         subject: "Someone sent you a Link.",
-        msg: link,
+        link: link,
       })
       .then((res) => {
         return res;
