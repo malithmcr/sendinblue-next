@@ -5,7 +5,7 @@ const defaultClient = SibApiV3Sdk.ApiClient.instance;
 var apiKey = defaultClient.authentications['api-key'];
 apiKey.apiKey = 'YOUR-API-KEY';
 
-var apiInstance = new SibApiV3Sdk.SMTPApi();
+var apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
 const sendinblue = (sendSmtpEmail) => {
   apiInstance.sendTransacEmail(sendSmtpEmail).then(function(data) {
